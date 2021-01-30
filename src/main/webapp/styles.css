@@ -10,6 +10,17 @@
     padding-top: 58px;
 }
 
+.wbdv-line-height{
+    line-height:30px;
+}
+
+.wbdv-margin{
+    margin: 50px;
+}
+
 .color-red {
     color:red;
+}
+.color-blue {
+    color:blue;
 }
