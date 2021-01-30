@@ -12,8 +12,22 @@
     color:white;
 }
 
+.wbdv-editor-widget-template {
+    background-color: white;
+    width: 800px;
+    border: 1px solid gray;
+    padding: 30px;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
 .wbdv-editor-background{
     background-color: black;
+}
+
+.wbdv-editor-button-format{
+    background-color: red;
+    color: white;
 }
 
 .wbdv-editor-padding-top{

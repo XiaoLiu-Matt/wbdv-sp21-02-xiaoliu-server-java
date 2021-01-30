@@ -18,11 +18,18 @@
     margin: 50px;
 }
 
+.wbdv-margin-top{
+    margin-top: 50px;
+}
+
 .color-red {
     color:red;
 }
 .color-blue {
     color:blue;
+}
+.background-color-yellow {
+    background-color:yellow;
 }
 
 .color-white {
