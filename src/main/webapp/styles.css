@@ -1,9 +1,9 @@
 .wbdv-sticky-nav-bar {
-    background-color: lightblue;
     padding: 10px;
     position: fixed;
     width: 100%;
     z-index: 1;
+    background-color: lightblue;
 }
 
 .container {
@@ -11,7 +11,7 @@
 }
 
 .wbdv-line-height{
-    line-height:30px;
+    line-height:50px;
 }
 
 .wbdv-margin{
@@ -23,4 +23,8 @@
 }
 .color-blue {
     color:blue;
+}
+
+.color-white {
+    color:white;
 }
