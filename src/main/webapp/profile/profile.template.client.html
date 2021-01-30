@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../styles.css" rel="stylesheet">
+    <link href="./profile.style.client.css" rel="stylesheet"/>
     <meta charset="UTF-8">
     <title>Profile</title>
 </head>
@@ -9,10 +11,10 @@
     <div class="container float">
         <h1>Profile</h1>
 
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-success wbdv-profile-text-center" role="alert">
             A simple success alert—check it out!
         </div>
-        <div class="alert alert-danger" role="alert">
+        <div class="alert alert-danger wbdv-profile-text-center" role="alert">
             A simple danger alert—check it out!
         </div>
 
@@ -23,9 +25,7 @@
             </label>
             <div class="col-sm-10">
                 <input type="text"
-                       placeholder="johnny"
-                       title="Please type your username"
-                       value="alice"
+                       value="Alice"
                        readonly
                        class="form-control"
                        id="username">
@@ -33,14 +33,14 @@
         </div>
 
         <div class="mb-3 row">
-            <label for="inputPassword"
+            <label for="inputPhoneNumber"
                    class="col-sm-2 col-form-label">
-                Password
+                Phone
             </label>
             <div class="col-sm-10">
-                <input type="password"
-                       class="form-control"
-                       id="inputPassword">
+                <input class="form-control"
+                       placeholder="(555)123-4324"
+                       id="inputPhoneNumber">
             </div>
         </div>
 
@@ -52,20 +52,8 @@
             <div class="col-sm-10">
                 <input type="email"
                        class="form-control"
+                       placeholder="Alice@wonderland.com"
                        id="email">
-            </div>
-        </div>
-
-        <div class="mb-3 row">
-            <label for="dob"
-                   class="col-sm-2 col-form-label">
-                DOB
-            </label>
-            <div class="col-sm-10">
-                <input type="date"
-                       value="2345-12-21"
-                       class="form-control"
-                       id="dob">
             </div>
         </div>
 
@@ -79,8 +67,32 @@
                         class="form-control">
                     <option>Faculty</option>
                     <option>Student</option>
-                    <option>Staff</option>
+                    <option>Admin</option>
                 </select>
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="dob"
+                   class="col-sm-2 col-form-label">
+                Date Of Birth
+            </label>
+            <div class="col-sm-10">
+                <input type="date"
+                       placeholder="mm/dd/yyyy"
+                       class="form-control"
+                       id="dob">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">
+
+            </label>
+            <div class="col-sm-10">
+                <button class="btn btn-success btn-block">
+                    Update
+                </button>
             </div>
         </div>
 
