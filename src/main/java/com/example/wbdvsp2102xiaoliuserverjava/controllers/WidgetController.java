@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 //@CrossOrigin(origins = "*")
-@CrossOrigin(origins = {"https://assignment5xiao.herokuapp.com","*"})
+@CrossOrigin
 public class WidgetController {
     @Autowired
     WidgetService service;
