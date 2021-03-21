@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"https://assignment5xiao.herokuapp.com","*"})
 public class WidgetController {
     @Autowired
     WidgetService service;
