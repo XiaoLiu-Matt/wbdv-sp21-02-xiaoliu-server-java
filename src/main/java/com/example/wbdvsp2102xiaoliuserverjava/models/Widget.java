@@ -1,8 +1,16 @@
 package com.example.wbdvsp2102xiaoliuserverjava.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "widgets")
 public class Widget {
-    private String name;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    private String name;
     private String type;
     private Integer widgetOrder;
     private String text;
@@ -15,15 +23,55 @@ public class Widget {
     private String src, url;
     private String topicId;
 
-    public Widget(Long id, String topicId, String type, Integer size, String text) {
+
+
+    public Widget(Long id, String topicId, String type, Integer size
+            , String text,Integer widgetOrder, Integer width, Integer height, String src ) {
         this.id = id;
         this.type = type;
         this.text = text;
         this.size = size;
         this.topicId = topicId;
+        this.widgetOrder = widgetOrder;
+        this.width = width;
+        this.height = height;
+        this.src = src;
     }
+
     public Widget(){
 
+    }
+
+    public Integer getWidth() {
+        return width;
+    }
+
+    public void setWidth(Integer width) {
+        this.width = width;
+    }
+
+    public Integer getHeight() {
+        return height;
+    }
+
+    public void setHeight(Integer height) {
+        this.height = height;
+    }
+
+    public String getSrc() {
+        return src;
+    }
+
+    public void setSrc(String src) {
+        this.src = src;
+    }
+
+    public Integer getWidgetOrder() {
+        return widgetOrder;
+    }
+
+    public void setWidgetOrder(Integer widgetOrder) {
+        this.widgetOrder = widgetOrder;
     }
 
     public Long getId() {
